@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "i8O8qN19AihGnUycGiJM8W363wP9WSfHLiB6IgWPY+zXd5UR0IQiKk70dLkZ33pXK9lEM7zA6L3OvZgzIvEizw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\source\\repos\\FigurasMVVM\\FigurasMVVM\\FigurasMVVM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"MvvmLightLibs 5.4.1.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}

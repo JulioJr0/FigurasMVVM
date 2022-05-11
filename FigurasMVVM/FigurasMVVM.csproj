@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\add.png" />
+    <None Remove="Assets\JosefinSans-Italic-VariableFont_wght.ttf" />
+    <None Remove="Assets\Koulen-Regular.ttf" />
+    <None Remove="Assets\PTSansNarrow-Regular.ttf" />
+    <None Remove="Assets\Raleway-VariableFont_wght.ttf" />
+    <None Remove="Assets\Satisfy-Regular.ttf" />
+    <None Remove="Assets\VarelaRound-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\JosefinSans-Italic-VariableFont_wght.ttf" />
+    <Resource Include="Assets\Koulen-Regular.ttf" />
+    <Resource Include="Assets\PTSansNarrow-Regular.ttf" />
+    <Resource Include="Assets\Raleway-VariableFont_wght.ttf" />
+    <Resource Include="Assets\Satisfy-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\VarelaRound-Regular.ttf" />
+  </ItemGroup>
+
+</Project>

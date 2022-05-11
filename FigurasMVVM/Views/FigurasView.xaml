@@ -1,0 +1,122 @@
+﻿<Window x:Class="FigurasMVVM.Views.FigurasView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FigurasMVVM.Views" xmlns:viewmodels="clr-namespace:FigurasMVVM.ViewModels"
+        mc:Ignorable="d"
+        Title="FigurasView" Height="900" Width="1600">
+    <Window.DataContext>
+        <viewmodels:FigurasViewModel></viewmodels:FigurasViewModel>
+    </Window.DataContext>
+    <UniformGrid Columns="1" Rows="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <UniformGrid Grid.Row="0" Margin="10">
+                <ContentControl>
+                    <local:DetallesFiguraView></local:DetallesFiguraView>
+                    <!--<ContentControl.Resources>
+                <local:AgregarEditarFiguraView x:Key="agregar"></local:AgregarEditarFiguraView>
+                <local:DetallesFiguraView x:Key="detalles"></local:DetallesFiguraView>
+            </ContentControl.Resources>-->
+                    <!--Josefin
+            PT Sans Narrow
+            Raleway Thin   
+            Satisfy
+            Varela Round-->
+                </ContentControl>
+            </UniformGrid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width=".1*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <ListBox x:Name="Listt" Grid.Column="0"  Height="auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="#4472c4" Margin="10,10,10,10">
+                    <!--ItemsSource="{Binding Lista}"-->
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel IsItemsHost="True" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman dfsf dsf ds f ds fsf ds</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Image Source="https://i.ebayimg.com/images/g/BZoAAOSwaPFf5ptY/s-l400.jpg">
+                        </Image>
+                        <Label>Levi Ackerman</Label>
+                    </StackPanel>
+                </ListBox>
+                <Button Grid.Column="1" Background="red" FontSize="30" Width="100" Height="{Binding ElementName=Listt, Path=Height}" Margin="{Binding ElementName=Listt, Path=Margin}">
+                    <Image Source="../Assets/add.png" Stretch="Uniform"></Image>
+                </Button>
+            </Grid>
+        </Grid>
+        <UniformGrid.Resources>
+            <Style TargetType="Image">
+                <Setter Property="Margin" Value="10,10,5,5"></Setter>
+                <Setter Property="Stretch" Value="Fill"></Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="Varela Round"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+            </Style>
+            <Style TargetType="StackPanel">
+                <Setter Property="Width" Value="150"></Setter>
+                <Setter Property="Height" Value="180"></Setter>
+            </Style>
+            <!--<Style TargetType="UserControl">
+                <Setter Property="Background" Value="Indigo"></Setter>
+            </Style>-->
+        </UniformGrid.Resources>
+    </UniformGrid>
+</Window>
